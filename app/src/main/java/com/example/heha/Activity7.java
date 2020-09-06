@@ -2,22 +2,14 @@ package com.example.heha;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.graphics.Canvas;
-import android.graphics.Point;
-import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
-import android.util.Log;
-import android.graphics.Color;
+
 import android.view.DragEvent;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 import android.content.ClipData;
-import android.content.ClipDescription;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
 
 public class Activity7 extends AppCompatActivity {
 
