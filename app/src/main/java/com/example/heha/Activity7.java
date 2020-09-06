@@ -1,9 +1,17 @@
 package com.example.heha;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.graphics.Canvas;
+import android.graphics.Point;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.util.Log;
 import android.graphics.Color;
 import android.view.DragEvent;
+import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 import android.content.ClipData;
 import android.content.ClipDescription;
@@ -13,111 +21,107 @@ import android.widget.ImageView;
 
 public class Activity7 extends AppCompatActivity {
 
-    ImageView img, img_2;
-    public View.OnDragListener nDragListener;
+    LinearLayout target1, target2, target3, target4;
+    Button test1, test2, test3, test4, btn1, btn2, btn3, btn4;;
+    int i = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.activity_7);
 
+        target1 = (LinearLayout) findViewById(R.id.target1);
+        target2 = (LinearLayout) findViewById(R.id.target2);
+        target3 = (LinearLayout) findViewById(R.id.target3);
+        target4 = (LinearLayout) findViewById(R.id.target4);
 
+        test1 = (Button) findViewById(R.id.test1);
+        test2 = (Button) findViewById(R.id.test2);
+        test3 = (Button) findViewById(R.id.test3);
+        test4 = (Button) findViewById(R.id.test4);
 
-        img = findViewById(R.id.imageView);
-        img_2 = findViewById(R.id.imageView2);
+        btn1 = (Button) findViewById(R.id.btn1);
+        btn2 = (Button) findViewById(R.id.btn2);
+        btn3 = (Button) findViewById(R.id.btn3);
+        btn4 = (Button) findViewById(R.id.btn4);
 
-        MyDragEventListener nDragListener = new MyDragEventListener();
-        img.setOnDragListener(nDragListener);
-        img_2.setOnDragListener(nDragListener);
-        img.setOnLongClickListener(new View.OnLongClickListener() {
+        target1.setOnDragListener(dragListenre);
+        target2.setOnDragListener(dragListenre);
+        target3.setOnDragListener(dragListenre);
+        target4.setOnDragListener(dragListenre);
 
+        btn1.setOnLongClickListener(longclickListener);
+        btn2.setOnLongClickListener(longclickListener);
+        btn3.setOnLongClickListener(longclickListener);
+        btn4.setOnLongClickListener(longclickListener);
+    }
+
+    View.OnLongClickListener longclickListener = new View.OnLongClickListener() {
+        @Override
+        public boolean onLongClick(View v) {
+            ClipData data = ClipData.newPlainText("", "");
+            View.DragShadowBuilder myShadowBuilder = new View.DragShadowBuilder(v);
+            v.startDrag(data, myShadowBuilder, v, 0);
+            return true;
+        }
+    };
+
+    View.OnDragListener dragListenre;
+
+    {
+        dragListenre = new View.OnDragListener() {
             @Override
-            public boolean onLongClick(View v) {
+            public boolean onDrag(View v, DragEvent event) {
 
-                ClipData.Item item = new ClipData.Item("Skull Dropped!!");
+                int dragEvent = event.getAction();
+                final View view = (View) event.getLocalState();
 
-                ClipData dragData = new ClipData(
-                        (CharSequence) v.getTag(),
-                        new String[] {ClipDescription.MIMETYPE_TEXT_PLAIN},
-                        item);
+                switch (dragEvent) {
+                    case DragEvent.ACTION_DRAG_ENTERED:
 
-                View.DragShadowBuilder myShadow = new MyDragShadowBuilder(img);
+                        break;
+                    case DragEvent.ACTION_DRAG_EXITED:
 
-                v.startDrag(dragData,myShadow, null, 0);
-
-                return true;
-
-            }
-        });
-}
-
-protected class MyDragEventListener implements View.OnDragListener{
-        public boolean onDrag(View v, DragEvent event) {
-
-            final int action = event.getAction();
-
-            switch(action) {
-
-                case DragEvent.ACTION_DRAG_STARTED:
-
-                if(event.getClipDescription().hasMimeType(ClipDescription.MIMETYPE_TEXT_PLAIN)) {
-
-                    v.setBackgroundColor(Color.BLUE);
-                    v.invalidate();
-                    return true;
-                }
-                return false;
-
-                case DragEvent.ACTION_DRAG_ENTERED:
-
-                v.setBackgroundColor(Color.GREEN);
-                v.invalidate();
-
-                return true;
-
-                case DragEvent.ACTION_DRAG_LOCATION:
-
-                    return true;
-
-                case DragEvent.ACTION_DRAG_EXITED:
-
-                    v.setBackgroundColor(Color.BLUE);
-                    v.invalidate();
-
-                    return true;
-
+                        break;
                     case DragEvent.ACTION_DROP:
 
-                        ClipData.Item item = event.getClipData().getItemAt(0);
-
-                        CharSequence dragData = item.getText();
-
-                        Toast.makeText( Activity7.this, dragData, Toast.LENGTH_LONG).show();
-
-                        v.setBackgroundColor(Color.WHITE);
-
-                        v.invalidate();
-
-                        return true;
-
-                        case DragEvent.ACTION_DRAG_ENDED:
-
-                            v.setBackgroundColor(Color.WHITE);
-
-                        v.invalidate();
-
-                            event.getResult();
-
-                            return true;
-
-                default:
-
-                        Log.e( "DragDrop Example", "Unknown action type recieved by OnDraglistener");
+                        if (view.getId() == R.id.btn1 && v.getId() == R.id.target1) {
+                            LinearLayout oldparent = (LinearLayout) view.getParent();
+                            oldparent.removeView(view);
+                            LinearLayout newParent = (LinearLayout) v;
+                            test1.setVisibility(View.GONE);
+                            newParent.addView(view);
+                            i++;
+                        } else if (view.getId() == R.id.btn2 && v.getId() == R.id.target2) {
+                            LinearLayout oldparent = (LinearLayout) view.getParent();
+                            oldparent.removeView(view);
+                            LinearLayout newParent = (LinearLayout) v;
+                            test2.setVisibility(View.GONE);
+                            newParent.addView(view);
+                            i++;
+                        } else if (view.getId() == R.id.btn3 && v.getId() == R.id.target3) {
+                            LinearLayout oldparent = (LinearLayout) view.getParent();
+                            oldparent.removeView(view);
+                            LinearLayout newParent = (LinearLayout) v;
+                            test3.setVisibility(View.GONE);
+                            newParent.addView(view);
+                            i++;
+                        } else if (view.getId() == R.id.btn4 && v.getId() == R.id.target4) {
+                            LinearLayout oldparent = (LinearLayout) view.getParent();
+                            oldparent.removeView(view);
+                            LinearLayout newParent = (LinearLayout) v;
+                            test4.setVisibility(View.GONE);
+                            newParent.addView(view);
+                            i++;
+                        } else {
+                            return false;
+                        }
                         break;
+                }
+                return true;
             }
-
-            return false;
-            }
-
-        }
+        };
     }
+}
