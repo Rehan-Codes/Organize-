@@ -6,9 +6,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.drawable.Animatable;
 import android.view.DragEvent;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.content.ClipData;
 import android.os.Bundle;
@@ -18,6 +20,7 @@ public class Activity7 extends AppCompatActivity {
 
     LinearLayout target1, target2, target3, target4;
     Button test1, test2, test3, test4, btn1, btn2, btn3, btn4, submit, backToMenu, resetChange;;
+    ImageView mImgCheck;
     int i = 0;
     int num1 = 0, num2 = 0, num3 = 0, num4=0;
     @Override
@@ -69,6 +72,9 @@ public class Activity7 extends AppCompatActivity {
                                 }
                             });
                     alertDialog.show();
+
+                    mImgCheck = (ImageView) findViewById(R.id.imageView);
+                    ((Animatable) mImgCheck.getDrawable()).start();
                 }
                 else {
                     AlertDialog alertDialog = new AlertDialog.Builder(Activity7.this).create();
