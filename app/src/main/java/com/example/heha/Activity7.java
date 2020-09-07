@@ -70,6 +70,23 @@ public class Activity7 extends AppCompatActivity {
                             });
                     alertDialog.show();
                 }
+                else {
+                    AlertDialog alertDialog = new AlertDialog.Builder(Activity7.this).create();
+                    alertDialog.setTitle("Alert");
+                    alertDialog.setMessage("Oops Try Again!");
+                    alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.dismiss();
+                                }
+                            });
+                    alertDialog.show();
+
+                    Intent intent = getIntent();
+                    finish();
+                    startActivity(intent);
+                }
+
             }
         });
 
