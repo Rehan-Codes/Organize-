@@ -17,7 +17,7 @@ import android.view.View;
 public class Activity7 extends AppCompatActivity {
 
     LinearLayout target1, target2, target3, target4;
-    Button test1, test2, test3, test4, btn1, btn2, btn3, btn4, submit, backToMenu, resetChange;;
+    Button test1, test2, test3, test4, btn1, btn2, btn3, btn4, submit, backToMenu;;
     int i = 0;
     int num1 = 0, num2 = 0, num3 = 0, num4=0;
     @Override
@@ -54,7 +54,6 @@ public class Activity7 extends AppCompatActivity {
         btn4.setOnLongClickListener(longclickListener);
 
         backToMenu = (Button) findViewById(R.id.menu);
-        resetChange = (Button) findViewById(R.id.Reset);
         submit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if(num1 == 1 && num2 == 1 && num3 == 1 && num4 == 1)
@@ -80,16 +79,6 @@ public class Activity7 extends AppCompatActivity {
                 startActivity(int2);
             }
         });
-
-        resetChange.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = getIntent();
-                finish();
-                startActivity(intent);
-            }
-        });
-
     }
 
     View.OnLongClickListener longclickListener = new View.OnLongClickListener() {
