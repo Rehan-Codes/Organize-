@@ -20,10 +20,10 @@
         android:background="#000000">
 
         <Button
-            android:id="@+id/heha"
+            android:id="@+id/menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0" />
+            android:text="<-------" />
 
         <TextView
             android:id="@+id/textView5"
