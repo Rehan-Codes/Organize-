@@ -69,6 +69,7 @@ public class Activity7 extends AppCompatActivity {
                                 }
                             });
                     alertDialog.show();
+
                 }
                 else {
                     AlertDialog alertDialog = new AlertDialog.Builder(Activity7.this).create();

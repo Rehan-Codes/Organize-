@@ -229,17 +229,17 @@
 
         <LinearLayout
             android:id="@+id/btnTarget4"
-            android:layout_width="165dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
             android:padding="40dp">
 
-            <ImageView
+            <Button
                 android:id="@+id/btn4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/rottweiler" />
+                android:text="test4" />
         </LinearLayout>
     </LinearLayout>
 
@@ -265,7 +265,6 @@
                 android:text="Submit" />
         </LinearLayout>
     </LinearLayout>
-
 
 
 
