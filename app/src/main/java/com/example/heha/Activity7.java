@@ -56,7 +56,7 @@ public class Activity7 extends AppCompatActivity {
                 if(num1 == 1 && num2 == 1 && num3 == 1 && num4 == 1)
                 {
                     AlertDialog alertDialog = new AlertDialog.Builder(Activity7.this).create();
-                    //alertDialog.setTitle("Alert");
+                    alertDialog.setTitle("Alert");
                     alertDialog.setMessage("Alert message to be shown");
                     alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
                             new DialogInterface.OnClickListener() {
