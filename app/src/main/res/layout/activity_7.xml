@@ -23,16 +23,22 @@
             android:id="@+id/menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="<-------" />
+            android:text="Menu" />
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="238dp"
+            android:layout_width="237dp"
             android:layout_height="wrap_content"
             android:text="Cost"
             android:textAlignment="center"
             android:textColor="#C1BEBE"
             android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/Reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset" />
     </LinearLayout>
 
 
