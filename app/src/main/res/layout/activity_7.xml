@@ -21,13 +21,13 @@
 
         <Button
             android:id="@+id/heha"
-            android:layout_width="65dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0" />
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="289dp"
+            android:layout_width="238dp"
             android:layout_height="wrap_content"
             android:text="Cost"
             android:textAlignment="center"
