@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.view.DragEvent;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -16,7 +17,7 @@ import android.view.View;
 public class Activity7 extends AppCompatActivity {
 
     LinearLayout target1, target2, target3, target4;
-    Button test1, test2, test3, test4, btn1, btn2, btn3, btn4, submit;;
+    Button test1, test2, test3, test4, btn1, btn2, btn3, btn4, submit, backToMenu;;
     int i = 0;
     int num1 = 0, num2 = 0, num3 = 0, num4=0;
     @Override
@@ -51,6 +52,8 @@ public class Activity7 extends AppCompatActivity {
         btn2.setOnLongClickListener(longclickListener);
         btn3.setOnLongClickListener(longclickListener);
         btn4.setOnLongClickListener(longclickListener);
+
+        backToMenu = (Button) findViewById(R.id.menu);
         submit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if(num1 == 1 && num2 == 1 && num3 == 1 && num4 == 1)
@@ -66,6 +69,14 @@ public class Activity7 extends AppCompatActivity {
                             });
                     alertDialog.show();
                 }
+            }
+        });
+
+        backToMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent int2 = new Intent(Activity7.this,Activity2.class);
+                startActivity(int2);
             }
         });
     }
