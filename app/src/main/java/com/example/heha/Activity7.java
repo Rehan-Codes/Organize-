@@ -89,6 +89,7 @@ public class Activity7 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //test
 
     }
 
