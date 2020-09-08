@@ -27,7 +27,7 @@
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="185dp"
+            android:layout_width="156dp"
             android:layout_height="wrap_content"
             android:text="Cost"
             android:textAlignment="center"
@@ -36,7 +36,7 @@
 
         <Button
             android:id="@+id/Reset"
-            android:layout_width="137dp"
+            android:layout_width="148dp"
             android:layout_height="wrap_content"
             android:text="Reset" />
     </LinearLayout>
