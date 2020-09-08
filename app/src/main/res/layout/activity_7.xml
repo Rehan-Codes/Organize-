@@ -14,10 +14,10 @@
 
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="425dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="#000000">
+        android:background="#000000"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/menu"
@@ -27,7 +27,7 @@
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="237dp"
+            android:layout_width="202dp"
             android:layout_height="wrap_content"
             android:text="Cost"
             android:textAlignment="center"
@@ -36,7 +36,7 @@
 
         <Button
             android:id="@+id/Reset"
-            android:layout_width="wrap_content"
+            android:layout_width="121dp"
             android:layout_height="wrap_content"
             android:text="Reset" />
     </LinearLayout>
@@ -237,7 +237,7 @@
 
         <LinearLayout
             android:id="@+id/btnTarget4"
-            android:layout_width="wrap_content"
+            android:layout_width="165dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
@@ -247,7 +247,7 @@
                 android:id="@+id/btn4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="test4" />
+                android:text="Test4" />
         </LinearLayout>
     </LinearLayout>
 
@@ -273,6 +273,7 @@
                 android:text="Submit" />
         </LinearLayout>
     </LinearLayout>
+
 
 
 

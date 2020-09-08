@@ -3,7 +3,6 @@ package com.example.heha;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.DragEvent;
@@ -61,9 +60,9 @@ public class Activity7 extends AppCompatActivity {
                 if(num1 == 1 && num2 == 1 && num3 == 1 && num4 == 1)
                 {
                     AlertDialog alertDialog = new AlertDialog.Builder(Activity7.this).create();
-                    alertDialog.setTitle("Alert");
-                    alertDialog.setMessage("Alert message to be shown");
-                    alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                    alertDialog.setTitle("Level Passed");
+                    alertDialog.setMessage("Congratulations!");
+                    alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "Next Level",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     dialog.dismiss();
