@@ -62,10 +62,20 @@ public class Activity7 extends AppCompatActivity {
                     AlertDialog alertDialog = new AlertDialog.Builder(Activity7.this).create();
                     alertDialog.setTitle("Level Passed");
                     alertDialog.setMessage("Congratulations!");
-                    alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "Next Level",
+                    alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Next Level",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     dialog.dismiss();
+                                    Intent intent2 =new Intent(Activity7.this,Activity8.class);
+                                    startActivity(intent2);
+                                }
+                            });
+                    alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Back to Menu",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.dismiss();
+                                    Intent int3 = new Intent(Activity7.this,Activity2.class);
+                                    startActivity(int3);
                                 }
                             });
                     alertDialog.show();
