@@ -181,14 +181,6 @@
                 android:text="test1" />
         </LinearLayout>
 
-        <Button
-            android:id="@+id/Next"
-            android:layout_width="162dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:visibility="gone"
-            android:text="Button" />
-
         <LinearLayout
             android:id="@+id/btnTarget2"
             android:layout_width="wrap_content"
@@ -204,11 +196,6 @@
                 android:text="test2" />
         </LinearLayout>
     </LinearLayout>
-
-
-
-
-
 
 
 
