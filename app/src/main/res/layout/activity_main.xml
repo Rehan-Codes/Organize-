@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#32B0EA">
+    android:background="@drawable/titlepage">
 
     <TextView
         android:id="@+id/textView"
@@ -15,13 +15,6 @@
         android:layout_centerVertical="true"
         android:text=" " />
 
-    <ImageView
-        android:layout_width="360dp"
-        android:layout_height="201dp"
-        android:layout_above="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/homescreen"/>
-
     <Button
         android:id="@+id/button"
         android:layout_width="188dp"
@@ -29,6 +22,6 @@
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="1dp"
-        android:background="#FF9800"
+        android:background="#FF0000"
         android:text="Start" />
 </RelativeLayout>
