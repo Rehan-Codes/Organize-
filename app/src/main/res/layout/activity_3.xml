@@ -106,11 +106,12 @@
     </TableLayout>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="106dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="cost"
-        android:textSize="50sp"/>
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Cost"
+        android:textSize="50sp" />
 </RelativeLayout>
 
 
