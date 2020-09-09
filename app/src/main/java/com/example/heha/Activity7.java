@@ -18,7 +18,7 @@ public class Activity7 extends AppCompatActivity {
     LinearLayout target1, target2, target3, target4;
     Button test1, test2, test3, test4, btn1, btn2, btn3, btn4, submit, backToMenu, resetChange;
     int i = 0;
-    int num1 = 0, num2 = 0, num3 = 0, num4=0;
+    int num1 = 0, num2 = 0, num3 = 0, num4 = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
