@@ -41,12 +41,13 @@
             android:text="Reset" />
     </LinearLayout>
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:background="#000000">
-    <TextView
+        <TextView
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -55,7 +56,63 @@
             android:textColor="#FFFFFF"
             android:textSize="18sp" />
 
-</LinearLayout>
+    </LinearLayout>
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:background="#673AB7">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+        <TableRow
+            android:id="@+id/target1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/test1"
+                android:layout_width="414dp"
+                android:layout_height="70dp"
+                android:text="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/target2">
+
+            <Button
+                android:id="@+id/test2"
+                android:layout_width="414dp"
+                android:layout_height="70dp"
+                android:text="2" />
+        </TableRow>
+    </TableLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -73,73 +130,47 @@
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_height="15dp"/>
+            android:layout_height="0dp"/>
 
-    <TableRow
-        android:id="@+id/target1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <Button
-            android:id="@+id/test1"
-            android:layout_width="205dp"
-            android:layout_height="80dp"
-            android:text="1" />
-    </TableRow>
         <TableRow
-        android:id="@+id/target2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+            android:id="@+id/target3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/test2"
-            android:layout_width="205dp"
-            android:layout_height="80dp"
-            android:text="2" />
+            <Button
+                android:id="@+id/test3"
+                android:layout_width="414dp"
+                android:layout_height="70dp"
+                android:text="3" />
         </TableRow>
-    </TableLayout>
-
-
-
-
-
-
-
-
-    <TableLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="0dp"
-        android:background="#673AB7"
-        android:id="@+id/target3">
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="15dp"/>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/target4">
 
-        <Button
-                android:id="@+id/test3"
-                android:layout_width="205dp"
-                android:layout_height="80dp"
-                android:text="3" />
-
             <Button
                 android:id="@+id/test4"
-                android:layout_width="205dp"
-                android:layout_height="80dp"
+                android:layout_width="414dp"
+                android:layout_height="70dp"
                 android:text="4" />
-
         </TableRow>
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="15dp"/>
     </TableLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -156,13 +187,12 @@
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_marginBottom="0dp"
         android:background="#FF5722">
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_height="96dp"/>
+            android:layout_height="30dp"/>
 
         <TableRow
             android:layout_width="match_parent"
@@ -194,7 +224,6 @@
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_marginBottom="0dp"
         android:background="#FF5722">
 
@@ -315,14 +344,19 @@
                 android:text="Submit" />
         </LinearLayout>
     </LinearLayout>
-
-
-
-
-
-
-
-
 </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

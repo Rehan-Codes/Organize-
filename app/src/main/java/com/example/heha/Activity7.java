@@ -3,12 +3,12 @@ package com.example.heha;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.DragEvent;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.content.ClipData;
 import android.os.Bundle;
@@ -17,9 +17,10 @@ import android.view.View;
 public class Activity7 extends AppCompatActivity {
 
     LinearLayout target1, target2, target3, target4;
-    Button test1, test2, test3, test4, btn1, btn2, btn3, btn4, submit, backToMenu, resetChange, nextLevel;;
+    Button test1, test2, test3, test4, submit, backToMenu, resetChange;
+    ImageView btn1, btn2, btn3, btn4;
     int i = 0;
-    int num1 = 0, num2 = 0, num3 = 0, num4=0;
+    int num1 = 0, num2 = 0, num3 = 0, num4 = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,10 +38,10 @@ public class Activity7 extends AppCompatActivity {
         test3 = (Button) findViewById(R.id.test3);
         test4 = (Button) findViewById(R.id.test4);
 
-        btn1 = (Button) findViewById(R.id.btn1);
-        btn2 = (Button) findViewById(R.id.btn2);
-        btn3 = (Button) findViewById(R.id.btn3);
-        btn4 = (Button) findViewById(R.id.btn4);
+        btn1 = (ImageView) findViewById(R.id.btn1);
+        btn2 = (ImageView) findViewById(R.id.btn2);
+        btn3 = (ImageView) findViewById(R.id.btn3);
+        btn4 = (ImageView) findViewById(R.id.btn4);
         submit = (Button) findViewById(R.id.submit);
 
         target1.setOnDragListener(dragListenre);
@@ -55,23 +56,30 @@ public class Activity7 extends AppCompatActivity {
 
         backToMenu = (Button) findViewById(R.id.menu);
         resetChange = (Button) findViewById(R.id.Reset);
-        nextLevel = (Button) findViewById(R.id.Next);
         submit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if(num1 == 1 && num2 == 1 && num3 == 1 && num4 == 1)
                 {
                     AlertDialog alertDialog = new AlertDialog.Builder(Activity7.this).create();
-                    alertDialog.setTitle("Alert");
-                    alertDialog.setMessage("Alert message to be shown");
-                    alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                    alertDialog.setTitle("Level Passed");
+                    alertDialog.setMessage("Congratulations!");
+                    alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Next Level",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     dialog.dismiss();
+                                    Intent intent2 =new Intent(Activity7.this,Activity8.class);
+                                    startActivity(intent2);
+                                }
+                            });
+                    alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Back to Menu",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.dismiss();
+                                    Intent int3 = new Intent(Activity7.this,Activity2.class);
+                                    startActivity(int3);
                                 }
                             });
                     alertDialog.show();
-
-                    nextLevel.setVisibility(View.VISIBLE);
 
                 }
                 else {
@@ -110,7 +118,6 @@ public class Activity7 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        //test
 
     }
 
