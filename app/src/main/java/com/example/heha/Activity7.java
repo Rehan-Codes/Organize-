@@ -84,8 +84,8 @@ public class Activity7 extends AppCompatActivity {
                 }
                 else {
                     AlertDialog alertDialog = new AlertDialog.Builder(Activity7.this).create();
-                    alertDialog.setTitle("Alert");
-                    alertDialog.setMessage("Oops Try Again!");
+                    alertDialog.setTitle("Fail");
+                    alertDialog.setMessage("Looks like you failed. Try Again!");
                     alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
@@ -140,12 +140,13 @@ public class Activity7 extends AppCompatActivity {
 
                 int dragEvent = event.getAction();
 
-                final View view = (View) event.getLocalState();
+                View view = (View) event.getLocalState();
 
                 switch (dragEvent) {
                     case DragEvent.ACTION_DRAG_ENTERED:
 
                         break;
+
                     case DragEvent.ACTION_DRAG_EXITED:
 
                         break;
@@ -156,6 +157,8 @@ public class Activity7 extends AppCompatActivity {
                             {
                                 num1 = 1;
                             }
+                            view.setOnLongClickListener(null);
+                            v.setOnDragListener(null);
                             LinearLayout oldparent = (LinearLayout) view.getParent();
                             oldparent.removeView(view);
                             LinearLayout newParent = (LinearLayout) v;
@@ -167,6 +170,8 @@ public class Activity7 extends AppCompatActivity {
                             {
                                 num2 = 1;
                             }
+                            view.setOnLongClickListener(null);
+                            target2.setOnDragListener(null);
                             LinearLayout oldparent = (LinearLayout) view.getParent();
                             oldparent.removeView(view);
                             LinearLayout newParent = (LinearLayout) v;
@@ -178,6 +183,8 @@ public class Activity7 extends AppCompatActivity {
                             {
                                 num3 = 1;
                             }
+                            view.setOnLongClickListener(null);
+                            target3.setOnDragListener(null);
                             LinearLayout oldparent = (LinearLayout) view.getParent();
                             oldparent.removeView(view);
                             LinearLayout newParent = (LinearLayout) v;
@@ -189,9 +196,12 @@ public class Activity7 extends AppCompatActivity {
                             {
                                 num4 = 1;
                             }
+                            view.setOnLongClickListener(null);
+                            target4.setOnDragListener(null);
                             LinearLayout oldparent = (LinearLayout) view.getParent();
                             oldparent.removeView(view);
                             LinearLayout newParent = (LinearLayout) v;
+                            btn4.refreshDrawableState();
                             test4.setVisibility(View.GONE);
                             newParent.addView(view);
                             i++;
