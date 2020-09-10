@@ -55,10 +55,13 @@
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="18sp" />
+</LinearLayout>
 
-    </LinearLayout>
-
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#673AB7">
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -93,6 +96,7 @@
                 android:text="2" />
         </TableRow>
     </TableLayout>
+    </LinearLayout>
 
 
 
@@ -121,7 +125,11 @@
 
 
 
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#673AB7">
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -156,6 +164,7 @@
                 android:text="4" />
         </TableRow>
     </TableLayout>
+    </LinearLayout>
 
 
 
@@ -182,8 +191,11 @@
 
 
 
-
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FF5722">
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -216,11 +228,15 @@
             android:layout_width="0dp"
             android:layout_height="15dp"/>
     </TableLayout>
+    </LinearLayout>
 
 
 
-
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FF5722">
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -253,7 +269,7 @@
             android:layout_width="0dp"
             android:layout_height="15dp"/>
     </TableLayout>
-
+    </LinearLayout>
 
 
 
