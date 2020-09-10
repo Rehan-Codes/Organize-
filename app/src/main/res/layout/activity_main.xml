@@ -24,4 +24,15 @@
         android:layout_marginTop="1dp"
         android:background="#FF0000"
         android:text="Start" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="112dp"
+        android:background="#FF0000"
+        android:text="Help" />
+
 </RelativeLayout>
