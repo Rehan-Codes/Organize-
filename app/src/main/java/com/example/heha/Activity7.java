@@ -84,8 +84,8 @@ public class Activity7 extends AppCompatActivity {
                 }
                 else {
                     AlertDialog alertDialog = new AlertDialog.Builder(Activity7.this).create();
-                    alertDialog.setTitle("Fail");
-                    alertDialog.setMessage("Looks like you failed. Try Again!");
+                    alertDialog.setTitle("Incorrect!");
+                    alertDialog.setMessage("Try Again");
                     alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
