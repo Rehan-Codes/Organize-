@@ -33,6 +33,7 @@
         android:layout_marginTop="80dp"
         android:layout_marginLeft="112dp"
         android:background="#FF0000"
+        android:layout_centerHorizontal="true"
         android:text="Help" />
 
 </RelativeLayout>

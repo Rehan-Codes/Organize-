@@ -81,23 +81,40 @@ public class Activity7 extends AppCompatActivity {
                                 }
                             });
                     alertDialog.show();
+                    Button btnPositive = alertDialog.getButton(AlertDialog.BUTTON_POSITIVE);
+                    Button btnNegative = alertDialog.getButton(AlertDialog.BUTTON_NEGATIVE);
 
+                    LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) btnPositive.getLayoutParams();
+                    layoutParams.weight = 10;
+                    btnPositive.setLayoutParams(layoutParams);
+                    btnNegative.setLayoutParams(layoutParams);
                 }
                 else {
                     AlertDialog alertDialog = new AlertDialog.Builder(Activity7.this).create();
                     alertDialog.setTitle("Incorrect!");
-                    alertDialog.setMessage("Try Again");
-                    alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                    alertDialog.setMessage("Try Again!");
+                    alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "OK",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     dialog.dismiss();
                                 }
                             });
+                    alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "RESET",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    Intent intent = getIntent();
+                                    finish();
+                                    startActivity(intent);
+                                }
+                            });
                     alertDialog.show();
+                    Button btnPositive = alertDialog.getButton(AlertDialog.BUTTON_POSITIVE);
+                    Button btnNegative = alertDialog.getButton(AlertDialog.BUTTON_NEGATIVE);
 
-                    Intent intent = getIntent();
-                    finish();
-                    startActivity(intent);
+                    LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) btnPositive.getLayoutParams();
+                    layoutParams.weight = 10;
+                    btnPositive.setLayoutParams(layoutParams);
+                    btnNegative.setLayoutParams(layoutParams);
                 }
 
             }
