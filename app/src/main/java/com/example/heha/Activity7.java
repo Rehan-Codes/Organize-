@@ -27,7 +27,6 @@ public class Activity7 extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.activity_7);
-        //test
 
         target1 = (LinearLayout) findViewById(R.id.target1);
         target2 = (LinearLayout) findViewById(R.id.target2);
@@ -63,7 +62,7 @@ public class Activity7 extends AppCompatActivity {
                 {
                     AlertDialog alertDialog = new AlertDialog.Builder(Activity7.this).create();
                     alertDialog.setTitle("Level Passed");
-                    alertDialog.setMessage("Congratulations!");
+                    alertDialog.setMessage("Ferrari 458 - $250-500k CAD\n" + "Rottweiler Dog - $2-5k CAD\n" + "ROLEX DEEPSEA Watch - 15-20k CAD\n" + "Super Yacht - 250-500k CAD");
                     alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Next Level",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
