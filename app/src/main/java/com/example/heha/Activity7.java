@@ -27,6 +27,7 @@ public class Activity7 extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.activity_7);
+        //test
 
         target1 = (LinearLayout) findViewById(R.id.target1);
         target2 = (LinearLayout) findViewById(R.id.target2);
