@@ -27,7 +27,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Menu" />
+            android:background="@drawable/menu" />
 
         <TextView
             android:id="@+id/textView5"
@@ -42,10 +42,10 @@
         <Button
             android:id="@+id/Reset"
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:layout_alignParentLeft="true"
-            android:text="Reset" />
+            android:layout_weight="1"
+            android:background="@drawable/resetbutton"/>
     </LinearLayout>
 
 

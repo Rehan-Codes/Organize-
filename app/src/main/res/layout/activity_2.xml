@@ -17,16 +17,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="125dp"
-        android:background="#757575"
-        android:text="cost" />
+        android:background="@drawable/costbutton"/>
 
     <Button
         android:id="@+id/Weight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="250dp"
-        android:background="#757575"
-        android:text="weight" />
+        android:background="@drawable/weightbutton" />
 
     <Button
         android:id="@+id/Size"
@@ -41,8 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="500dp"
-        android:background="#757575"
-        android:text="time" />
+        android:background="@drawable/timebutton" />
 
 
 </RelativeLayout>
