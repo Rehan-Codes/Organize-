@@ -193,14 +193,16 @@
 
                     <ImageView
                         android:id="@+id/btn1"
-                        android:layout_width="205dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="80dp"
+                        android:layout_weight="1"
                         android:src="@drawable/yacht"/>
 
                     <ImageView
                         android:id="@+id/btn2"
-                        android:layout_width="182dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="80dp"
+                        android:layout_weight="1"
                         android:src="@drawable/rolexdeepsea" />
 
                 </TableRow>
@@ -233,14 +235,16 @@
 
                     <ImageView
                         android:id="@+id/btn3"
-                        android:layout_width="205dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="80dp"
+                        android:layout_weight="1"
                         android:src="@drawable/ferrari458"/>
 
                     <ImageView
                         android:id="@+id/btn4"
-                        android:layout_width="184dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="80dp"
+                        android:layout_weight="1"
                         android:src="@drawable/rottweiler" />
 
                 </TableRow>

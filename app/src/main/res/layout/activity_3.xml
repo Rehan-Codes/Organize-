@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="70dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginLeft="80dp">
 
         <TableRow
@@ -110,6 +111,6 @@
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Cost"
         android:textSize="50sp" />
-</RelativeLayout>
 
+</RelativeLayout>
 
