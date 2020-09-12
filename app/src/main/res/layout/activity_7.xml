@@ -263,17 +263,6 @@
             android:baselineAligned="false"
             android:background="#F44336">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#F44336">
-
-                <Button
-                    android:id="@+id/submit"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Submit" />
-            </TableRow>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

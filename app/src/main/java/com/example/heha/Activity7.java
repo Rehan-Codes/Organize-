@@ -17,7 +17,7 @@ import android.view.View;
 public class Activity7 extends AppCompatActivity {
 
     LinearLayout target1, target2, target3, target4;
-    Button test1, test2, test3, test4, submit, backToMenu, resetChange;
+    Button test1, test2, test3, test4, backToMenu, resetChange;
     ImageView btn1, btn2, btn3, btn4;
     int i = 0;
     int num1 = 0, num2 = 0, num3 = 0, num4 = 0;
@@ -42,7 +42,6 @@ public class Activity7 extends AppCompatActivity {
         btn2 = (ImageView) findViewById(R.id.btn2);
         btn3 = (ImageView) findViewById(R.id.btn3);
         btn4 = (ImageView) findViewById(R.id.btn4);
-        submit = (Button) findViewById(R.id.submit);
 
         target1.setOnDragListener(dragListenre);
         target2.setOnDragListener(dragListenre);
@@ -56,68 +55,7 @@ public class Activity7 extends AppCompatActivity {
 
         backToMenu = (Button) findViewById(R.id.menu);
         resetChange = (Button) findViewById(R.id.Reset);
-        submit.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                if(num1 == 1 && num2 == 1 && num3 == 1 && num4 == 1)
-                {
-                    AlertDialog alertDialog = new AlertDialog.Builder(Activity7.this).create();
-                    alertDialog.setTitle("Level Passed");
-                    alertDialog.setMessage("Ferrari 458 - $250-500k CAD\n" + "Rottweiler Dog - $2-5k CAD\n" + "ROLEX DEEPSEA Watch - 15-20k CAD\n" + "Super Yacht - 250-500k CAD");
-                    alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Next Level",
-                            new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int which) {
-                                    dialog.dismiss();
-                                    Intent intent2 =new Intent(Activity7.this,Activity8.class);
-                                    startActivity(intent2);
-                                }
-                            });
-                    alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Back to Menu",
-                            new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int which) {
-                                    dialog.dismiss();
-                                    Intent int3 = new Intent(Activity7.this,Activity2.class);
-                                    startActivity(int3);
-                                }
-                            });
-                    alertDialog.show();
-                    Button btnPositive = alertDialog.getButton(AlertDialog.BUTTON_POSITIVE);
-                    Button btnNegative = alertDialog.getButton(AlertDialog.BUTTON_NEGATIVE);
 
-                    LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) btnPositive.getLayoutParams();
-                    layoutParams.weight = 10;
-                    btnPositive.setLayoutParams(layoutParams);
-                    btnNegative.setLayoutParams(layoutParams);
-                }
-                else {
-                    AlertDialog alertDialog = new AlertDialog.Builder(Activity7.this).create();
-                    alertDialog.setTitle("Incorrect!");
-                    alertDialog.setMessage("Try Again!");
-                    alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "OK",
-                            new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int which) {
-                                    dialog.dismiss();
-                                }
-                            });
-                    alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "RESET",
-                            new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog, int which) {
-                                    Intent intent = getIntent();
-                                    finish();
-                                    startActivity(intent);
-                                }
-                            });
-                    alertDialog.show();
-                    Button btnPositive = alertDialog.getButton(AlertDialog.BUTTON_POSITIVE);
-                    Button btnNegative = alertDialog.getButton(AlertDialog.BUTTON_NEGATIVE);
-
-                    LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) btnPositive.getLayoutParams();
-                    layoutParams.weight = 10;
-                    btnPositive.setLayoutParams(layoutParams);
-                    btnNegative.setLayoutParams(layoutParams);
-                }
-
-            }
-        });
 
         backToMenu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -182,6 +120,7 @@ public class Activity7 extends AppCompatActivity {
                             test1.setVisibility(View.GONE);
                             newParent.addView(view);
                             i++;
+                            checki(i);
                         } else if (v.getId() == R.id.target2) {
                             if(view.getId() == R.id.btn2)
                             {
@@ -195,6 +134,7 @@ public class Activity7 extends AppCompatActivity {
                             test2.setVisibility(View.GONE);
                             newParent.addView(view);
                             i++;
+                            checki(i);
                         } else if (v.getId() == R.id.target3) {
                             if(view.getId() == R.id.btn3)
                             {
@@ -208,6 +148,7 @@ public class Activity7 extends AppCompatActivity {
                             test3.setVisibility(View.GONE);
                             newParent.addView(view);
                             i++;
+                            checki(i);
                         } else if (v.getId() == R.id.target4) {
                             if(view.getId() == R.id.btn4)
                             {
@@ -222,6 +163,7 @@ public class Activity7 extends AppCompatActivity {
                             test4.setVisibility(View.GONE);
                             newParent.addView(view);
                             i++;
+                            checki(i);
                         } else {
                             return false;
                         }
@@ -230,5 +172,65 @@ public class Activity7 extends AppCompatActivity {
                 return true;
             }
         };
+    }
+    protected void checki(int i)
+    {
+        if(i==4) {
+            if (num1 == 1 && num2 == 1 && num3 == 1 && num4 == 1) {
+                AlertDialog alertDialog = new AlertDialog.Builder(Activity7.this).create();
+                alertDialog.setTitle("Level Passed");
+                alertDialog.setMessage("Ferrari 458 - $250-500k CAD\n" + "Rottweiler Dog - $2-5k CAD\n" + "ROLEX DEEPSEA Watch - 15-20k CAD\n" + "Super Yacht - 250-500k CAD");
+                alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Next Level",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                                Intent intent2 = new Intent(Activity7.this, Activity8.class);
+                                startActivity(intent2);
+                            }
+                        });
+                alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Back to Menu",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                                Intent int3 = new Intent(Activity7.this, Activity2.class);
+                                startActivity(int3);
+                            }
+                        });
+                alertDialog.show();
+                Button btnPositive = alertDialog.getButton(AlertDialog.BUTTON_POSITIVE);
+                Button btnNegative = alertDialog.getButton(AlertDialog.BUTTON_NEGATIVE);
+
+                LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) btnPositive.getLayoutParams();
+                layoutParams.weight = 10;
+                btnPositive.setLayoutParams(layoutParams);
+                btnNegative.setLayoutParams(layoutParams);
+            } else {
+                AlertDialog alertDialog = new AlertDialog.Builder(Activity7.this).create();
+                alertDialog.setTitle("Incorrect!");
+                alertDialog.setMessage("Try Again!");
+                alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "OK",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                            }
+                        });
+                alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "RESET",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                Intent intent = getIntent();
+                                finish();
+                                startActivity(intent);
+                            }
+                        });
+                alertDialog.show();
+                Button btnPositive = alertDialog.getButton(AlertDialog.BUTTON_POSITIVE);
+                Button btnNegative = alertDialog.getButton(AlertDialog.BUTTON_NEGATIVE);
+
+                LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) btnPositive.getLayoutParams();
+                layoutParams.weight = 10;
+                btnPositive.setLayoutParams(layoutParams);
+                btnNegative.setLayoutParams(layoutParams);
+            }
+        }
     }
 }
