@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.LightingColorFilter;
 import android.view.DragEvent;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -196,6 +197,7 @@ public class Activity7 extends AppCompatActivity {
                                 startActivity(int3);
                             }
                         });
+                alertDialog.getWindow().getDecorView().getBackground().setColorFilter(new LightingColorFilter(0xFF44336, 000000));
                 alertDialog.show();
                 Button btnPositive = alertDialog.getButton(AlertDialog.BUTTON_POSITIVE);
                 Button btnNegative = alertDialog.getButton(AlertDialog.BUTTON_NEGATIVE);
@@ -223,6 +225,7 @@ public class Activity7 extends AppCompatActivity {
                             }
                         });
                 alertDialog.show();
+                alertDialog.getWindow().getDecorView().getBackground().setColorFilter(new LightingColorFilter(0xFF44336, 00000));
                 Button btnPositive = alertDialog.getButton(AlertDialog.BUTTON_POSITIVE);
                 Button btnNegative = alertDialog.getButton(AlertDialog.BUTTON_NEGATIVE);
 
