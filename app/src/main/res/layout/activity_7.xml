@@ -78,7 +78,7 @@
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="0dp"/>
+                android:layout_height="10dp"/>
 
             <TableRow
                 android:id="@+id/target1"
@@ -95,7 +95,7 @@
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="20dp"/>
+                android:layout_height="10dp"/>
 
             <TableRow
                 android:layout_width="match_parent"
@@ -127,7 +127,7 @@
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="20dp"/>
+                android:layout_height="10dp"/>
 
             <TableRow
                 android:id="@+id/target3"
@@ -144,7 +144,7 @@
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="20dp"/>
+                android:layout_height="10dp"/>
 
             <TableRow
                 android:layout_width="match_parent"
@@ -160,7 +160,7 @@
             </TableRow>
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="20dp"/>
+                android:layout_height="10dp"/>
         </TableLayout>
     </LinearLayout>
 
@@ -185,7 +185,7 @@
 
                 <ImageView
                     android:layout_width="0dp"
-                    android:layout_height="15dp"/>
+                    android:layout_height="1dp"/>
 
                 <TableRow
                     android:layout_width="match_parent"
@@ -253,16 +253,6 @@
                     android:layout_width="0dp"
                     android:layout_height="15dp"/>
             </TableLayout>
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:baselineAligned="false"
-            android:background="#F44336">
-
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
