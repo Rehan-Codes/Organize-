@@ -78,7 +78,7 @@
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="10dp"/>
+                android:layout_height="0dp"/>
 
             <TableRow
                 android:id="@+id/target1"
@@ -95,7 +95,7 @@
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="10dp"/>
+                android:layout_height="20dp"/>
 
             <TableRow
                 android:layout_width="match_parent"
@@ -127,7 +127,7 @@
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="10dp"/>
+                android:layout_height="20dp"/>
 
             <TableRow
                 android:id="@+id/target3"
@@ -144,7 +144,7 @@
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="10dp"/>
+                android:layout_height="20dp"/>
 
             <TableRow
                 android:layout_width="match_parent"
@@ -160,7 +160,7 @@
             </TableRow>
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="10dp"/>
+                android:layout_height="20dp"/>
         </TableLayout>
     </LinearLayout>
 
@@ -185,7 +185,7 @@
 
                 <ImageView
                     android:layout_width="0dp"
-                    android:layout_height="1dp"/>
+                    android:layout_height="15dp"/>
 
                 <TableRow
                     android:layout_width="match_parent"
