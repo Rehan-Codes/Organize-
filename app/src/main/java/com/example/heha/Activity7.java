@@ -16,7 +16,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class Activity7 extends AppCompatActivity {
-
+//Random comment
     LinearLayout target1, target2, target3, target4;
     Button test1, test2, test3, test4, backToMenu, resetChange;
     ImageView btn1, btn2, btn3, btn4;
