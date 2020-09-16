@@ -27,7 +27,9 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:background="@drawable/menu" />
+            android:text = "Menu"
+            android:background = "@drawable/rounded_corners_cost"
+            android:fontFamily="sans-serif-black"/>
 
         <TextView
             android:id="@+id/textView5"
@@ -42,10 +44,11 @@
         <Button
             android:id="@+id/Reset"
             android:layout_width="0dp"
-            android:layout_height="60dp"
-            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/resetbutton"/>
+            android:text = "Restart"
+            android:background="@drawable/rounded_corners_cost"
+            android:fontFamily="sans-serif-black"/>
     </LinearLayout>
 
 
@@ -90,7 +93,8 @@
                     android:layout_width="219dp"
                     android:layout_height="70dp"
                     android:layout_weight="1"
-                    android:text="1" />
+                    android:text="1"
+                    android:background="@drawable/border_dashed_cost"/>
             </TableRow>
 
             <ImageView
@@ -107,7 +111,8 @@
                     android:layout_width="0dp"
                     android:layout_height="70dp"
                     android:text="2"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:background="@drawable/border_dashed_cost"/>
             </TableRow>
         </TableLayout>
     </LinearLayout>
@@ -139,7 +144,8 @@
                     android:layout_width="25dp"
                     android:layout_height="70dp"
                     android:layout_weight="1"
-                    android:text="3" />
+                    android:text="3"
+                    android:background="@drawable/border_dashed_cost"/>
             </TableRow>
 
             <ImageView
@@ -156,7 +162,8 @@
                     android:layout_width="0dp"
                     android:layout_height="70dp"
                     android:text="4"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:background="@drawable/border_dashed_cost"/>
             </TableRow>
             <ImageView
                 android:layout_width="0dp"
