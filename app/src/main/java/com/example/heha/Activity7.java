@@ -15,8 +15,9 @@ import android.content.ClipData;
 import android.os.Bundle;
 import android.view.View;
 
-public class Activity7 extends AppCompatActivity {
 
+public class Activity7 extends AppCompatActivity {
+//Random comment
     LinearLayout target1, target2, target3, target4;
     Button test1, test2, test3, test4, backToMenu, resetChange;
     ImageView btn1, btn2, btn3, btn4;
@@ -179,7 +180,7 @@ public class Activity7 extends AppCompatActivity {
         if(i==4) {
             if (num1 == 1 && num2 == 1 && num3 == 1 && num4 == 1) {
                 AlertDialog alertDialog = new AlertDialog.Builder(Activity7.this).create();
-                alertDialog.setTitle("Level Passed");
+                alertDialog.setTitle("Level Passed \u2713");
                 alertDialog.setMessage("Ferrari 458 - $250-500k CAD\nRottweiler Dog - $2-5k CAD\nROLEX DEEPSEA Watch - 15-20k CAD\nSuper Yacht - 250-500k CAD");
                 alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Next Level",
                         new DialogInterface.OnClickListener() {
@@ -234,6 +235,8 @@ public class Activity7 extends AppCompatActivity {
                 btnPositive.setLayoutParams(layoutParams);
                 btnNegative.setLayoutParams(layoutParams);
             }
+
+
         }
     }
 }
