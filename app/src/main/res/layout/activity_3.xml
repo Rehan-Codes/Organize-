@@ -12,7 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="150dp"
-        android:layout_marginLeft="110dp">
+        android:layout_marginLeft="110dp"
+        >
 
         <TableRow
             android:layout_width="match_parent"
@@ -127,7 +128,6 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="161dp"
-
         android:layout_alignParentEnd="true"
         android:layout_marginTop="70dp"
         android:layout_marginEnd="155dp"
