@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.LightingColorFilter;
 import android.view.DragEvent;
 import android.view.WindowManager;
@@ -17,7 +18,6 @@ import android.view.View;
 
 
 public class Activity7 extends AppCompatActivity {
-//Random comment
     LinearLayout target1, target2, target3, target4;
     Button test1, test2, test3, test4, backToMenu, resetChange;
     ImageView btn1, btn2, btn3, btn4;
@@ -198,10 +198,12 @@ public class Activity7 extends AppCompatActivity {
                                 startActivity(int3);
                             }
                         });
-                alertDialog.getWindow().getDecorView().getBackground().setColorFilter(new LightingColorFilter(0xFF44336, 000000));
+                alertDialog.getWindow().getDecorView().getBackground().setColorFilter(new LightingColorFilter(0x64eb34, 000000));
                 alertDialog.show();
                 Button btnPositive = alertDialog.getButton(AlertDialog.BUTTON_POSITIVE);
                 Button btnNegative = alertDialog.getButton(AlertDialog.BUTTON_NEGATIVE);
+                btnNegative.setTextColor(Color.DKGRAY);
+                btnPositive.setTextColor(Color.DKGRAY);
 
                 LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) btnPositive.getLayoutParams();
                 layoutParams.weight = 10;
@@ -229,6 +231,8 @@ public class Activity7 extends AppCompatActivity {
                 alertDialog.getWindow().getDecorView().getBackground().setColorFilter(new LightingColorFilter(0xFF44336, 00000));
                 Button btnPositive = alertDialog.getButton(AlertDialog.BUTTON_POSITIVE);
                 Button btnNegative = alertDialog.getButton(AlertDialog.BUTTON_NEGATIVE);
+                btnNegative.setTextColor(Color.DKGRAY);
+                btnPositive.setTextColor(Color.DKGRAY);
 
                 LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) btnPositive.getLayoutParams();
                 layoutParams.weight = 10;
