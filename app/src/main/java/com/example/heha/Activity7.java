@@ -17,12 +17,12 @@ import android.view.View;
 
 
 public class Activity7 extends AppCompatActivity {
-//Random comment
     LinearLayout target1, target2, target3, target4;
     Button test1, test2, test3, test4, backToMenu, resetChange;
     ImageView btn1, btn2, btn3, btn4;
     int i = 0;
     int num1 = 0, num2 = 0, num3 = 0, num4 = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,7 +62,7 @@ public class Activity7 extends AppCompatActivity {
         backToMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent int2 = new Intent(Activity7.this,Activity2.class);
+                Intent int2 = new Intent(Activity7.this, Activity2.class);
                 startActivity(int2);
             }
         });
@@ -110,8 +110,7 @@ public class Activity7 extends AppCompatActivity {
                     case DragEvent.ACTION_DROP:
 
                         if (v.getId() == R.id.target1) {
-                            if(view.getId() == R.id.btn1)
-                            {
+                            if (view.getId() == R.id.btn1) {
                                 num1 = 1;
                             }
                             view.setOnLongClickListener(null);
@@ -124,8 +123,7 @@ public class Activity7 extends AppCompatActivity {
                             i++;
                             checki(i);
                         } else if (v.getId() == R.id.target2) {
-                            if(view.getId() == R.id.btn2)
-                            {
+                            if (view.getId() == R.id.btn2) {
                                 num2 = 1;
                             }
                             view.setOnLongClickListener(null);
@@ -138,8 +136,7 @@ public class Activity7 extends AppCompatActivity {
                             i++;
                             checki(i);
                         } else if (v.getId() == R.id.target3) {
-                            if(view.getId() == R.id.btn3)
-                            {
+                            if (view.getId() == R.id.btn3) {
                                 num3 = 1;
                             }
                             view.setOnLongClickListener(null);
@@ -152,8 +149,7 @@ public class Activity7 extends AppCompatActivity {
                             i++;
                             checki(i);
                         } else if (v.getId() == R.id.target4) {
-                            if(view.getId() == R.id.btn4)
-                            {
+                            if (view.getId() == R.id.btn4) {
                                 num4 = 1;
                             }
                             view.setOnLongClickListener(null);
@@ -175,9 +171,9 @@ public class Activity7 extends AppCompatActivity {
             }
         };
     }
-    protected void checki(int i)
-    {
-        if(i==4) {
+
+    protected void checki(int i) {
+        if (i == 4) {
             if (num1 == 1 && num2 == 1 && num3 == 1 && num4 == 1) {
                 AlertDialog alertDialog = new AlertDialog.Builder(Activity7.this).create();
                 alertDialog.setTitle("Level Passed \u2713");
