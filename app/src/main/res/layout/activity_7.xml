@@ -204,7 +204,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="80dp"
                         android:layout_weight="1"
-                        android:src="@drawable/slevel1pic1"/>
+                        android:src="@drawable/yacht"/>
 
                     <ImageView
                         android:id="@+id/btn2"
