@@ -27,74 +27,74 @@ public class Activity4 extends AppCompatActivity {
         B1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent int1=new Intent(Activity4.this,Activity17.class);
-                startActivity(int1);
+                Intent int11=new Intent(Activity4.this,Activity17.class);
+                startActivity(int11);
             }
         });
 
         B2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent int2=new Intent(Activity4.this,Activity18.class);
-                startActivity(int2);
+                Intent int12=new Intent(Activity4.this,Activity18.class);
+                startActivity(int12);
             }
         });
 
         B3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent int3=new Intent(Activity4.this,Activity19.class);
-                startActivity(int3);
+                Intent int13=new Intent(Activity4.this,Activity19.class);
+                startActivity(int13);
             }
         });
 
         B4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent int4=new Intent(Activity4.this,Activity20.class);
-                startActivity(int4);
+                Intent int14=new Intent(Activity4.this,Activity20.class);
+                startActivity(int14);
             }
         });
         B5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent int5=new Intent(Activity4.this,Activity21.class);
-                startActivity(int5);
+                Intent int15=new Intent(Activity4.this,Activity21.class);
+                startActivity(int15);
             }
         });
         B6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent int6=new Intent(Activity4.this,Activity22.class);
-                startActivity(int6);
+                Intent int16=new Intent(Activity4.this,Activity22.class);
+                startActivity(int16);
             }
         });
         B7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent int7=new Intent(Activity4.this,Activity23.class);
-                startActivity(int7);
+                Intent int17=new Intent(Activity4.this,Activity23.class);
+                startActivity(int17);
             }
         });
         B8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent int8=new Intent(Activity4.this,Activity24.class);
-                startActivity(int8);
+                Intent int18=new Intent(Activity4.this,Activity24.class);
+                startActivity(int18);
             }
         });
         B9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent int9=new Intent(Activity4.this,Activity25.class);
-                startActivity(int9);
+                Intent int19=new Intent(Activity4.this,Activity25.class);
+                startActivity(int19);
             }
         });
         B10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent int10=new Intent(Activity4.this,Activity26.class);
-                startActivity(int10);
+                Intent int20=new Intent(Activity4.this,Activity26.class);
+                startActivity(int20);
             }
         });
     }
