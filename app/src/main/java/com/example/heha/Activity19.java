@@ -182,7 +182,7 @@ public class Activity19 extends AppCompatActivity {
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
                                 dialog.dismiss();
-                                Intent intent2 = new Intent(Activity19.this, Activity19.class);
+                                Intent intent2 = new Intent(Activity19.this, Activity20.class);
                                 startActivity(intent2);
                             }
                         });
