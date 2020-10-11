@@ -110,7 +110,7 @@ public class Activity24 extends AppCompatActivity {
                     case DragEvent.ACTION_DROP:
 
                         if (v.getId() == R.id.target1) {
-                            if (view.getId() == R.id.btn4) {
+                            if (view.getId() == R.id.btn2) {
                                 num1 = 1;
                             }
                             view.setOnLongClickListener(null);
@@ -123,7 +123,7 @@ public class Activity24 extends AppCompatActivity {
                             i++;
                             checki(i);
                         } else if (v.getId() == R.id.target2) {
-                            if (view.getId() == R.id.btn2) {
+                            if (view.getId() == R.id.btn4) {
                                 num2 = 1;
                             }
                             view.setOnLongClickListener(null);
@@ -177,7 +177,7 @@ public class Activity24 extends AppCompatActivity {
             if (num1 == 1 && num2 == 1 && num3 == 1 && num4 == 1) {
                 AlertDialog alertDialog = new AlertDialog.Builder(Activity24.this).create();
                 alertDialog.setTitle("Level Passed \u2713");
-                alertDialog.setMessage("Sports Bike - 300 lb-500 lb\nHarley Davidson Bike - 480 lb\nDirt Bike - 215 lb\nBicyle - 18 lb");
+                alertDialog.setMessage("Harley Davidson Bike - 480 lb\nSports Bike - 400 lb\nDirt Bike - 215 lb\nBicycle - 18 lb");
                 alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Next Level",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
