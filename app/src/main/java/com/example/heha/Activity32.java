@@ -177,7 +177,7 @@ public class Activity32 extends AppCompatActivity {
             if (num1 == 1 && num2 == 1 && num3 == 1 && num4 == 1) {
                 AlertDialog alertDialog = new AlertDialog.Builder(Activity32.this).create();
                 alertDialog.setTitle("Level Passed \u2713");
-                alertDialog.setMessage("Bell 206B(Blue Helicopter) - 210km/h\nGrumman G-164(Biplane) - 237km/h\nChinook Helicopter(2 Rotors) - 302km/h\nApache Helicopter - 365km/h");
+                alertDialog.setMessage("Bell 206B(Blue Heli) - 210km/h\nGrumman G-164(Biplane) - 237km/h\nChinook Heli(2 Rotors) - 302km/h\nApache Helicopter - 365km/h");
                 alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Next Level",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
