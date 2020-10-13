@@ -177,7 +177,7 @@ public class Activity34 extends AppCompatActivity {
             if (num1 == 1 && num2 == 1 && num3 == 1 && num4 == 1) {
                 AlertDialog alertDialog = new AlertDialog.Builder(Activity34.this).create();
                 alertDialog.setTitle("Level Passed \u2713");
-                alertDialog.setMessage("Pigeon - 60km/h\nHummingbird - 80km/h\nCrow - 100km/h\nBald Eagle -160km/h");
+                alertDialog.setMessage("Pigeon - 60km/h\nHummingbird - 80km/h\nCrow - 100km/h\nBald Eagle - 160km/h");
                 alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Next Level",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
