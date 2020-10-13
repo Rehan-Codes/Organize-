@@ -110,7 +110,7 @@ public class Activity27 extends AppCompatActivity {
                     case DragEvent.ACTION_DROP:
 
                         if (v.getId() == R.id.target1) {
-                            if (view.getId() == R.id.btn4) {
+                            if (view.getId() == R.id.btn2) {
                                 num1 = 1;
                             }
                             view.setOnLongClickListener(null);
@@ -123,7 +123,7 @@ public class Activity27 extends AppCompatActivity {
                             i++;
                             checki(i);
                         } else if (v.getId() == R.id.target2) {
-                            if (view.getId() == R.id.btn1) {
+                            if (view.getId() == R.id.btn4) {
                                 num2 = 1;
                             }
                             view.setOnLongClickListener(null);
@@ -149,7 +149,7 @@ public class Activity27 extends AppCompatActivity {
                             i++;
                             checki(i);
                         } else if (v.getId() == R.id.target4) {
-                            if (view.getId() == R.id.btn2) {
+                            if (view.getId() == R.id.btn1) {
                                 num4 = 1;
                             }
                             view.setOnLongClickListener(null);
