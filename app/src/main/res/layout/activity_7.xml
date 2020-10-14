@@ -204,14 +204,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="80dp"
                         android:layout_weight="1"
-                        android:src="@drawable/yacht"/>
+                        android:src="@drawable/clevel1pic4"/>
 
                     <ImageView
                         android:id="@+id/btn2"
                         android:layout_width="wrap_content"
                         android:layout_height="80dp"
                         android:layout_weight="1"
-                        android:src="@drawable/rolexdeepsea" />
+                        android:src="@drawable/clevel1pic2" />
 
                 </TableRow>
 
@@ -246,14 +246,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="80dp"
                         android:layout_weight="1"
-                        android:src="@drawable/nissan350z"/>
+                        android:src="@drawable/clevel1pic1"/>
 
                     <ImageView
                         android:id="@+id/btn4"
                         android:layout_width="wrap_content"
                         android:layout_height="80dp"
                         android:layout_weight="1"
-                        android:src="@drawable/rottweiler" />
+                        android:src="@drawable/clevel1pic3" />
 
                 </TableRow>
 
