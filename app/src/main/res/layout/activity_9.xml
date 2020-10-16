@@ -207,7 +207,7 @@
                         android:src="@drawable/clevel3pic3"/>
 
                     <ImageView
-                        android:id="@+id/btn2"
+                        android:id="@+id/btn4"
                         android:layout_width="wrap_content"
                         android:layout_height="80dp"
                         android:layout_weight="1"
@@ -242,14 +242,14 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/btn3"
+                        android:id="@+id/btn2"
                         android:layout_width="wrap_content"
                         android:layout_height="80dp"
                         android:layout_weight="1"
                         android:src="@drawable/clevel3pic2"/>
 
                     <ImageView
-                        android:id="@+id/btn4"
+                        android:id="@+id/btn3"
                         android:layout_width="wrap_content"
                         android:layout_height="80dp"
                         android:layout_weight="1"

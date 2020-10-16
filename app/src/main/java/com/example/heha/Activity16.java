@@ -28,7 +28,7 @@ public class Activity16 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-        setContentView(R.layout.activity_12);
+        setContentView(R.layout.activity_16);
 
         target1 = (LinearLayout) findViewById(R.id.target1);
         target2 = (LinearLayout) findViewById(R.id.target2);

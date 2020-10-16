@@ -200,14 +200,14 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/btn1"
+                        android:id="@+id/btn4"
                         android:layout_width="wrap_content"
                         android:layout_height="80dp"
                         android:layout_weight="1"
                         android:src="@drawable/clevel10pic4"/>
 
                     <ImageView
-                        android:id="@+id/btn2"
+                        android:id="@+id/btn1"
                         android:layout_width="wrap_content"
                         android:layout_height="80dp"
                         android:layout_weight="1"
@@ -249,7 +249,7 @@
                         android:src="@drawable/clevel10pic2"/>
 
                     <ImageView
-                        android:id="@+id/btn4"
+                        android:id="@+id/btn2"
                         android:layout_width="wrap_content"
                         android:layout_height="80dp"
                         android:layout_weight="1"
