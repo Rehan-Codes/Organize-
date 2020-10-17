@@ -110,7 +110,7 @@ public class Activity35 extends AppCompatActivity {
                     case DragEvent.ACTION_DROP:
 
                         if (v.getId() == R.id.target1) {
-                            if (view.getId() == R.id.btn1) {
+                            if (view.getId() == R.id.btn4) {
                                 num1 = 1;
                             }
                             view.setOnLongClickListener(null);
@@ -123,7 +123,7 @@ public class Activity35 extends AppCompatActivity {
                             i++;
                             checki(i);
                         } else if (v.getId() == R.id.target2) {
-                            if (view.getId() == R.id.btn3) {
+                            if (view.getId() == R.id.btn2) {
                                 num2 = 1;
                             }
                             view.setOnLongClickListener(null);
@@ -136,7 +136,7 @@ public class Activity35 extends AppCompatActivity {
                             i++;
                             checki(i);
                         } else if (v.getId() == R.id.target3) {
-                            if (view.getId() == R.id.btn2) {
+                            if (view.getId() == R.id.btn3) {
                                 num3 = 1;
                             }
                             view.setOnLongClickListener(null);
@@ -149,7 +149,7 @@ public class Activity35 extends AppCompatActivity {
                             i++;
                             checki(i);
                         } else if (v.getId() == R.id.target4) {
-                            if (view.getId() == R.id.btn4) {
+                            if (view.getId() == R.id.btn1) {
                                 num4 = 1;
                             }
                             view.setOnLongClickListener(null);
@@ -177,7 +177,7 @@ public class Activity35 extends AppCompatActivity {
             if (num1 == 1 && num2 == 1 && num3 == 1 && num4 == 1) {
                 AlertDialog alertDialog = new AlertDialog.Builder(Activity35.this).create();
                 alertDialog.setTitle("Level Passed \u2713");
-                alertDialog.setMessage("Ferrari 458 - $250-500k CAD\nRottweiler Dog - $2-5k CAD\nROLEX DEEPSEA Watch - 15-20k CAD\nSuper Yacht - 250-500k CAD");
+                alertDialog.setMessage("Deer(White-tailed) - 48km/h\nZebra - 64km/h\nOstrich - 70km/h\nLion - 80km/h");
                 alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Next Level",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
