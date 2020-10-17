@@ -61,7 +61,7 @@
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Level 1\nSort Base By Cost: HIGHEST TO LOWEST"
+            android:text="Level 8\nSort Base By Cost: HIGHEST TO LOWEST"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="18sp" />
