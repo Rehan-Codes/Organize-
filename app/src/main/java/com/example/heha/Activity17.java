@@ -177,7 +177,7 @@ public class Activity17 extends AppCompatActivity {
             if (num1 == 1 && num2 == 1 && num3 == 1 && num4 == 1) {
                 AlertDialog alertDialog = new AlertDialog.Builder(Activity17.this).create();
                 alertDialog.setTitle("Level Passed \u2713");
-                alertDialog.setMessage("Ferrari 458 - $250-500k CAD\nRottweiler Dog - $2-5k CAD\nROLEX DEEPSEA Watch - 15-20k CAD\nSuper Yacht - 250-500k CAD");
+                alertDialog.setMessage("Airplane - 175,000 lbs\nFedEx Truck - 16,000 lbs\nElephant - 4,233 lbs\nCommon Bottlenose Dolphins - 507 lbs");
                 alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Next Level",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
