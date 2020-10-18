@@ -181,7 +181,7 @@ public class Activity7 extends AppCompatActivity {
             if (num1 == 1 && num2 == 1 && num3 == 1 && num4 == 1) {
                 AlertDialog alertDialog = new AlertDialog.Builder(Activity7.this).create();
                 alertDialog.setTitle("Level Passed \u2713");
-                alertDialog.setMessage("Ferrari 458 - $250-500k CAD\nRottweiler Dog - $2-5k CAD\nROLEX DEEPSEA Watch - 15-20k CAD\nSuper Yacht - 250-500k CAD");
+                alertDialog.setMessage("Super Yacht - 250-500k CAD\nNissan 350Z - $20-36k CAD\nROLEX DEEPSEA Watch - 15-20k CAD\nRottweiler Dog - $2-5k CAD");
                 alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Next Level",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {

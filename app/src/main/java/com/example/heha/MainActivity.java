@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this).create();
                 alertDialog.setTitle("Guide");
-                alertDialog.setMessage("- Select one of the five categories\n- Select one of the levels\n- Sort the pictures according to the given requirements!");
+                alertDialog.setMessage("- Select one of the categories\n- Select one of the levels\n- Sort the pictures according to the given requirements!");
                 alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Close",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {

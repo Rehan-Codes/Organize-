@@ -16,7 +16,6 @@ public class Activity2 extends AppCompatActivity {
         Button Cost=(Button)findViewById(R.id.Cost);
         Button Weight=(Button)findViewById(R.id.Weight);
         Button Size=(Button)findViewById(R.id.Size);
-        Button Time=(Button)findViewById(R.id.Time);
 
         Cost.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,12 +41,5 @@ public class Activity2 extends AppCompatActivity {
             }
         });
 
-        Time.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent int4=new Intent(Activity2.this,Activity6.class);
-                startActivity(int4);
-            }
-        });
     }
 }

@@ -5,7 +5,7 @@
     android:id="@+id/LinearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F44336"
+    android:background="#4CAF50"
     android:orientation="vertical"
     android:paddingLeft="0dp"
     android:paddingTop="0dp"
@@ -73,12 +73,12 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="vertical"
-        android:background="#F44336">
+        android:background="#4CAF50">
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="0dp"
-            android:background="#F44336">
+            android:background="#4CAF50">
 
             <ImageView
                 android:layout_width="0dp"
@@ -124,12 +124,12 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="vertical"
-        android:background="#F44336">
+        android:background="#4CAF50">
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="0dp"
-            android:background="#F44336">
+            android:background="#4CAF50">
 
             <ImageView
                 android:layout_width="0dp"
@@ -178,18 +178,18 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="vertical"
-        android:background="#F44336">
+        android:background="#4CAF50">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="#F44336">
+            android:background="#4CAF50">
             <TableLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="0dp"
-                android:background="#F44336">
+                android:background="#4CAF50">
 
                 <ImageView
                     android:layout_width="0dp"
@@ -200,18 +200,18 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/btn1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="80dp"
-                        android:layout_weight="1"
-                        android:src="@drawable/yacht"/>
-
-                    <ImageView
                         android:id="@+id/btn2"
                         android:layout_width="wrap_content"
                         android:layout_height="80dp"
                         android:layout_weight="1"
-                        android:src="@drawable/rolexdeepsea" />
+                        android:src="@drawable/clevel1pic1"/>
+
+                    <ImageView
+                        android:id="@+id/btn3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/clevel1pic2" />
 
                 </TableRow>
 
@@ -226,12 +226,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="#F44336">
+            android:background="#4CAF50">
             <TableLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="0dp"
-                android:background="#F44336">
+                android:background="#4CAF50">
 
                 <ImageView
                     android:layout_width="0dp"
@@ -242,18 +242,18 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/btn3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="80dp"
-                        android:layout_weight="1"
-                        android:src="@drawable/nissan350z"/>
-
-                    <ImageView
                         android:id="@+id/btn4"
                         android:layout_width="wrap_content"
                         android:layout_height="80dp"
                         android:layout_weight="1"
-                        android:src="@drawable/rottweiler" />
+                        android:src="@drawable/clevel1pic3"/>
+
+                    <ImageView
+                        android:id="@+id/btn1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/clevel1pic4" />
 
                 </TableRow>
 
