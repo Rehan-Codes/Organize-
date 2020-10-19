@@ -14,7 +14,7 @@ import com.example.heha.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button button, btn2;
+    private Button button, btn2, buttonHelp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,21 +32,17 @@ public class MainActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this).create();
-                alertDialog.setTitle("Guide");
-                alertDialog.setMessage("- Select one of the categories\n- Select one of the levels\n- Sort the pictures according to the given requirements!");
-                alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Close",
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.dismiss();
-                            }
-                        });
-                alertDialog.show();
+                openActivityHelp();
             }
         });
     }
     public void openActivity2(){
         Intent intent = new Intent (this, Activity2.class);
+        startActivity(intent);
+    }
+
+    public void openActivityHelp(){
+        Intent intent = new Intent (this, help.class);
         startActivity(intent);
     }
 }
