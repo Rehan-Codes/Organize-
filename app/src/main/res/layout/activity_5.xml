@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity5">
+    tools:context=".Activity5"
+    android:background="@drawable/speedcategory">
 
     <TableLayout
         android:layout_width="wrap_content"
@@ -22,12 +23,20 @@
                 android:id="@+id/C1"
                 android:layout_width="120dp"
                 android:layout_height="90dp"
-                android:text="1" />
+                android:alpha="0.6"
+                android:background="@drawable/speedborder"
+                android:text="1"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/C2"
                 android:layout_width="120dp"
                 android:layout_height="90dp"
+                android:alpha="0.6"
+                android:background="@drawable/speedborder"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF"
                 android:text="2" />
 
         </TableRow>
@@ -40,12 +49,20 @@
                 android:id="@+id/C3"
                 android:layout_width="120dp"
                 android:layout_height="90dp"
+                android:alpha="0.6"
+                android:background="@drawable/speedborder"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF"
                 android:text="3" />
 
             <Button
                 android:id="@+id/C4"
                 android:layout_width="120dp"
                 android:layout_height="90dp"
+                android:alpha="0.6"
+                android:background="@drawable/speedborder"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF"
                 android:text="4" />
         </TableRow>
 
@@ -57,12 +74,20 @@
                 android:id="@+id/C5"
                 android:layout_width="120dp"
                 android:layout_height="90dp"
+                android:alpha="0.6"
+                android:background="@drawable/speedborder"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF"
                 android:text="5" />
 
             <Button
                 android:id="@+id/C6"
                 android:layout_width="120dp"
                 android:layout_height="90dp"
+                android:alpha="0.6"
+                android:background="@drawable/speedborder"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF"
                 android:text="6" />
         </TableRow>
 
@@ -74,12 +99,20 @@
                 android:id="@+id/C7"
                 android:layout_width="120dp"
                 android:layout_height="90dp"
+                android:alpha="0.6"
+                android:background="@drawable/speedborder"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF"
                 android:text="7" />
 
             <Button
                 android:id="@+id/C8"
                 android:layout_width="120dp"
                 android:layout_height="90dp"
+                android:alpha="0.6"
+                android:background="@drawable/speedborder"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF"
                 android:text="8" />
         </TableRow>
 
@@ -91,12 +124,20 @@
                 android:id="@+id/C9"
                 android:layout_width="120dp"
                 android:layout_height="90dp"
+                android:alpha="0.6"
+                android:background="@drawable/speedborder"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF"
                 android:text="9" />
 
             <Button
                 android:id="@+id/C10"
                 android:layout_width="120dp"
                 android:layout_height="90dp"
+                android:alpha="0.6"
+                android:background="@drawable/speedborder"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF"
                 android:text="10" />
         </TableRow>
 
@@ -106,6 +147,7 @@
     </TableLayout>
 
     <TextView
+        android:textColor="#ff2800"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"

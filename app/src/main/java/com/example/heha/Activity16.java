@@ -180,16 +180,8 @@ public class Activity16 extends AppCompatActivity {
         if(i==4) {
             if (num1 == 1 && num2 == 1 && num3 == 1 && num4 == 1) {
                 AlertDialog alertDialog = new AlertDialog.Builder(Activity16.this).create();
-                alertDialog.setTitle("Level Passed \u2713");
+                alertDialog.setTitle("Congratulations Category Completed \u2713");
                 alertDialog.setMessage("Jeff Bezos - $230B CAD\nBill Gates - $150B CAD\nElon Musk - $122B CAD\nWarren Buffet - $105B CAD");
-                alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Next Level",
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.dismiss();
-                                Intent intent2 = new Intent(Activity16.this, Activity2.class);
-                                startActivity(intent2);
-                            }
-                        });
                 alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Back to Menu",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {

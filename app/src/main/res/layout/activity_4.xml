@@ -21,13 +21,13 @@
                 android:id="@+id/B1"
                 android:layout_width="120dp"
                 android:layout_height="90dp"
-                android:text="1" />
+                android:background="@drawable/weightbuttonbackground"/>
 
             <Button
                 android:id="@+id/B2"
                 android:layout_width="120dp"
                 android:layout_height="90dp"
-                android:text="2" />
+                android:background="@drawable/weightbuttonbackground2"/>
 
         </TableRow>
 
@@ -39,13 +39,13 @@
                 android:id="@+id/B3"
                 android:layout_width="120dp"
                 android:layout_height="90dp"
-                android:text="3" />
+                android:background="@drawable/weightbuttonbackground3" />
 
             <Button
                 android:id="@+id/B4"
                 android:layout_width="120dp"
                 android:layout_height="90dp"
-                android:text="4" />
+                android:background="@drawable/weightbuttonbackground4" />
         </TableRow>
 
         <TableRow
@@ -56,13 +56,13 @@
                 android:id="@+id/B5"
                 android:layout_width="120dp"
                 android:layout_height="90dp"
-                android:text="5" />
+                android:background="@drawable/weightbuttonbackground5" />
 
             <Button
                 android:id="@+id/B6"
                 android:layout_width="120dp"
                 android:layout_height="90dp"
-                android:text="6" />
+                android:background="@drawable/weightbuttonbackground6" />
         </TableRow>
 
         <TableRow
@@ -73,13 +73,13 @@
                 android:id="@+id/B7"
                 android:layout_width="120dp"
                 android:layout_height="90dp"
-                android:text="7" />
+                android:background="@drawable/weightbuttonbackground7" />
 
             <Button
                 android:id="@+id/B8"
                 android:layout_width="120dp"
                 android:layout_height="90dp"
-                android:text="8" />
+                android:background="@drawable/weightbuttonbackground8" />
         </TableRow>
 
         <TableRow
@@ -90,13 +90,13 @@
                 android:id="@+id/B9"
                 android:layout_width="120dp"
                 android:layout_height="90dp"
-                android:text="9" />
+                android:background="@drawable/weightbuttonbackground9" />
 
             <Button
                 android:id="@+id/B10"
                 android:layout_width="120dp"
                 android:layout_height="90dp"
-                android:text="10" />
+                android:background="@drawable/weightbuttonbakground10" />
         </TableRow>
 
         <TableRow
