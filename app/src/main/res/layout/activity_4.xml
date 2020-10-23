@@ -10,6 +10,7 @@
     <TableLayout
         android:layout_width="243dp"
         android:layout_height="445dp"
+        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="87dp"
         android:layout_marginBottom="120dp">
@@ -111,7 +112,7 @@
         android:layout_centerHorizontal="true"
         android:text="Weight"
         android:fontFamily="sans-serif-black"
-        android:textSize="70dp"/>
+        android:textSize="65dp"/>
 </RelativeLayout>
 
 
