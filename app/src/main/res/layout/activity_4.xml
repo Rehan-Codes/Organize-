@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity4">
+    tools:context=".Activity4"
+    android:background="@drawable/weightbackground">
 
     <TableLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="243dp"
+        android:layout_height="445dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="70dp"
-        android:layout_marginLeft="80dp">
+        android:layout_marginLeft="87dp"
+        android:layout_marginBottom="120dp">
 
         <TableRow
             android:layout_width="match_parent"
@@ -21,13 +22,13 @@
                 android:id="@+id/B1"
                 android:layout_width="120dp"
                 android:layout_height="90dp"
-                android:background="@drawable/weightbuttonbackground"/>
+                android:background="@drawable/weightbuttonbackground" />
 
             <Button
                 android:id="@+id/B2"
                 android:layout_width="120dp"
                 android:layout_height="90dp"
-                android:background="@drawable/weightbuttonbackground2"/>
+                android:background="@drawable/weightbuttonbackground2" />
 
         </TableRow>
 
@@ -109,7 +110,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="Weight"
-        android:textSize="50dp"/>
+        android:fontFamily="sans-serif-black"
+        android:textSize="70dp"/>
 </RelativeLayout>
 
 
