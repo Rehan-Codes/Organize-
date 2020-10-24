@@ -123,7 +123,7 @@ public class Activity25 extends AppCompatActivity {
                             i++;
                             checki(i);
                         } else if (v.getId() == R.id.target2) {
-                            if (view.getId() == R.id.btn1) {
+                            if (view.getId() == R.id.btn2) {
                                 num2 = 1;
                             }
                             view.setOnLongClickListener(null);
@@ -136,7 +136,7 @@ public class Activity25 extends AppCompatActivity {
                             i++;
                             checki(i);
                         } else if (v.getId() == R.id.target3) {
-                            if (view.getId() == R.id.btn2) {
+                            if (view.getId() == R.id.btn1) {
                                 num3 = 1;
                             }
                             view.setOnLongClickListener(null);
