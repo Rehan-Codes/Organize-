@@ -22,18 +22,20 @@
         android:background="@drawable/costbutton"/>
 
     <Button
-        android:id="@+id/Weight"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="330dp"
-        android:background="@drawable/weightbutton" />
-
-    <Button
         android:id="@+id/Size"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="330dp"
         android:background="@drawable/speedbutton"/>
+
+    <Button
+        android:id="@+id/Weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:background="@drawable/weightbutton" />
+
+
 
 <!--    <Button
         android:id="@+id/Time"
