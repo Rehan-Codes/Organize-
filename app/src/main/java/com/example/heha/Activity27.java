@@ -186,11 +186,11 @@ public class Activity27 extends AppCompatActivity {
                                 startActivity(intent2);
                             }
                         });
-                alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Back to Menu",
+                alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Back to Levels",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
                                 dialog.dismiss();
-                                Intent int3 = new Intent(Activity27.this, Activity2.class);
+                                Intent int3 = new Intent(Activity27.this, Activity5.class);
                                 startActivity(int3);
                             }
                         });
