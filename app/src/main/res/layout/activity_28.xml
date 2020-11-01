@@ -95,7 +95,7 @@
                     android:layout_height="70dp"
                     android:layout_weight="1"
                     android:text="1"
-                    android:background="@drawable/border_dashed_cost"/>
+                    android:background="@drawable/border_dashed_speed"/>
             </TableRow>
 
             <ImageView
@@ -113,7 +113,7 @@
                     android:layout_height="70dp"
                     android:text="2"
                     android:layout_weight="1"
-                    android:background="@drawable/border_dashed_cost"/>
+                    android:background="@drawable/border_dashed_speed"/>
             </TableRow>
         </TableLayout>
     </LinearLayout>
@@ -146,7 +146,7 @@
                     android:layout_height="70dp"
                     android:layout_weight="1"
                     android:text="3"
-                    android:background="@drawable/border_dashed_cost"/>
+                    android:background="@drawable/border_dashed_speed"/>
             </TableRow>
 
             <ImageView
@@ -164,14 +164,13 @@
                     android:layout_height="70dp"
                     android:text="4"
                     android:layout_weight="1"
-                    android:background="@drawable/border_dashed_cost"/>
+                    android:background="@drawable/border_dashed_speed"/>
             </TableRow>
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="15dp"/>
         </TableLayout>
     </LinearLayout>
-
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -5,7 +5,7 @@
     android:id="@+id/LinearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F44336"
+    android:background="#0383a3"
     android:orientation="vertical"
     android:paddingLeft="0dp"
     android:paddingTop="0dp"
@@ -72,12 +72,12 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="vertical"
-        android:background="#F44336">
+        android:background="#0383a3">
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="0dp"
-            android:background="#F44336">
+            android:background="#0383a3">
 
             <ImageView
                 android:layout_width="0dp"
@@ -94,7 +94,7 @@
                     android:layout_height="70dp"
                     android:layout_weight="1"
                     android:text="1"
-                    android:background="@drawable/border_dashed_cost"/>
+                    android:background="@drawable/border_dashed_weight"/>
             </TableRow>
 
             <ImageView
@@ -112,7 +112,7 @@
                     android:layout_height="70dp"
                     android:text="2"
                     android:layout_weight="1"
-                    android:background="@drawable/border_dashed_cost"/>
+                    android:background="@drawable/border_dashed_weight"/>
             </TableRow>
         </TableLayout>
     </LinearLayout>
@@ -123,12 +123,12 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="vertical"
-        android:background="#F44336">
+        android:background="#0383a3">
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="0dp"
-            android:background="#F44336">
+            android:background="#0383a3">
 
             <ImageView
                 android:layout_width="0dp"
@@ -145,7 +145,7 @@
                     android:layout_height="70dp"
                     android:layout_weight="1"
                     android:text="3"
-                    android:background="@drawable/border_dashed_cost"/>
+                    android:background="@drawable/border_dashed_weight"/>
             </TableRow>
 
             <ImageView
@@ -163,7 +163,7 @@
                     android:layout_height="70dp"
                     android:text="4"
                     android:layout_weight="1"
-                    android:background="@drawable/border_dashed_cost"/>
+                    android:background="@drawable/border_dashed_weight"/>
             </TableRow>
             <ImageView
                 android:layout_width="0dp"
@@ -177,18 +177,18 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="vertical"
-        android:background="#F44336">
+        android:background="#0383a3">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="#F44336">
+            android:background="#0383a3">
             <TableLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="0dp"
-                android:background="#F44336">
+                android:background="#0383a3">
 
                 <ImageView
                     android:layout_width="0dp"
@@ -225,12 +225,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="#F44336">
+            android:background="#0383a3">
             <TableLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="0dp"
-                android:background="#F44336">
+                android:background="#0383a3">
 
                 <ImageView
                     android:layout_width="0dp"
