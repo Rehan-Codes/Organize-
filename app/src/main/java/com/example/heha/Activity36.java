@@ -169,7 +169,7 @@ public class Activity36 extends AppCompatActivity {
         if (i == 4) {
             if (num1 == 1 && num2 == 1 && num3 == 1 && num4 == 1) {
                 AlertDialog alertDialog = new AlertDialog.Builder(Activity36.this).create();
-                alertDialog.setTitle("Congratulations Category Completed \u2713");
+                alertDialog.setTitle("Congratulations!\n Category Completed \u2713");
                 alertDialog.setMessage("Mclaren P1(Top Left) - 350km/h\nPagani Huayra(Top Right) - 380km/h\nBugatti Veyron(Btm.Right) - 408km/h\nKoenigsegg Agera RS(Btm. Left) - 457km/h");
                 alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Back to Menu",
                         new DialogInterface.OnClickListener() {
