@@ -4,33 +4,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#D8D7D7">
+    android:background="@drawable/titlepage2">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:textColor="#FF0000"
         android:textSize="70sp"
         android:fontFamily="casual"
         android:text="Category" />
 
     <Button
         android:id="@+id/Cost"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.9"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
         android:background="@drawable/costbutton"/>
 
     <Button
         android:id="@+id/Weight"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.9"
         android:layout_height="wrap_content"
         android:layout_marginTop="330dp"
         android:background="@drawable/weightbutton" />
 
     <Button
         android:id="@+id/Size"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.9"
         android:layout_height="wrap_content"
         android:layout_marginTop="500dp"
         android:background="@drawable/speedbutton"/>

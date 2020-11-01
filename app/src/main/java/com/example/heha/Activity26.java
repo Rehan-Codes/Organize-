@@ -30,20 +30,20 @@ public class Activity26 extends AppCompatActivity {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.activity_26);
 
-        target1 = (LinearLayout) findViewById(R.id.target1);
-        target2 = (LinearLayout) findViewById(R.id.target2);
-        target3 = (LinearLayout) findViewById(R.id.target3);
-        target4 = (LinearLayout) findViewById(R.id.target4);
+        target1 = findViewById(R.id.target1);
+        target2 = findViewById(R.id.target2);
+        target3 = findViewById(R.id.target3);
+        target4 = findViewById(R.id.target4);
 
-        test1 = (Button) findViewById(R.id.test1);
-        test2 = (Button) findViewById(R.id.test2);
-        test3 = (Button) findViewById(R.id.test3);
-        test4 = (Button) findViewById(R.id.test4);
+        test1 = findViewById(R.id.test1);
+        test2 = findViewById(R.id.test2);
+        test3 = findViewById(R.id.test3);
+        test4 = findViewById(R.id.test4);
 
-        btn1 = (ImageView) findViewById(R.id.btn1);
-        btn2 = (ImageView) findViewById(R.id.btn2);
-        btn3 = (ImageView) findViewById(R.id.btn3);
-        btn4 = (ImageView) findViewById(R.id.btn4);
+        btn1 = findViewById(R.id.btn1);
+        btn2 = findViewById(R.id.btn2);
+        btn3 = findViewById(R.id.btn3);
+        btn4 = findViewById(R.id.btn4);
 
         target1.setOnDragListener(dragListenre);
         target2.setOnDragListener(dragListenre);
@@ -55,8 +55,8 @@ public class Activity26 extends AppCompatActivity {
         btn3.setOnLongClickListener(longclickListener);
         btn4.setOnLongClickListener(longclickListener);
 
-        backToMenu = (Button) findViewById(R.id.menu);
-        resetChange = (Button) findViewById(R.id.Reset);
+        backToMenu = findViewById(R.id.menu);
+        resetChange = findViewById(R.id.Reset);
 
 
         backToMenu.setOnClickListener(new View.OnClickListener() {
@@ -100,17 +100,10 @@ public class Activity26 extends AppCompatActivity {
                 View view = (View) event.getLocalState();
 
                 switch (dragEvent) {
-                    case DragEvent.ACTION_DRAG_ENTERED:
-
-                        break;
-
-                    case DragEvent.ACTION_DRAG_EXITED:
-
-                        break;
                     case DragEvent.ACTION_DROP:
 
                         if (v.getId() == R.id.target1) {
-                            if (view.getId() == R.id.btn2) {
+                            if (view.getId() == R.id.btn3) {
                                 num1 = 1;
                             }
                             view.setOnLongClickListener(null);
@@ -123,7 +116,7 @@ public class Activity26 extends AppCompatActivity {
                             i++;
                             checki(i);
                         } else if (v.getId() == R.id.target2) {
-                            if (view.getId() == R.id.btn1) {
+                            if (view.getId() == R.id.btn2) {
                                 num2 = 1;
                             }
                             view.setOnLongClickListener(null);
@@ -136,7 +129,7 @@ public class Activity26 extends AppCompatActivity {
                             i++;
                             checki(i);
                         } else if (v.getId() == R.id.target3) {
-                            if (view.getId() == R.id.btn3) {
+                            if (view.getId() == R.id.btn1) {
                                 num3 = 1;
                             }
                             view.setOnLongClickListener(null);
@@ -176,16 +169,8 @@ public class Activity26 extends AppCompatActivity {
         if (i == 4) {
             if (num1 == 1 && num2 == 1 && num3 == 1 && num4 == 1) {
                 AlertDialog alertDialog = new AlertDialog.Builder(Activity26.this).create();
-                alertDialog.setTitle("Level Passed \u2713");
-                alertDialog.setMessage("Boeing 777 - 875,000 lb\nBoeing 787 - 557,000 lb\nBoeing 747 - 404,548 lb\nBoeing 737 - 181,000 lb");
-                alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Next Level",
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.dismiss();
-                                Intent intent2 = new Intent(Activity26.this, Activity2.class);
-                                startActivity(intent2);
-                            }
-                        });
+                alertDialog.setTitle("Congratulations Category Completed \u2713");
+                alertDialog.setMessage("Boeing 747 - 404,548 lb\nBoeing 777 - 343,259 lb\nBoeing 787 - 254,192 lb\nBoeing 737 - 181,000 lb");
                 alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Back to Menu",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
@@ -194,7 +179,7 @@ public class Activity26 extends AppCompatActivity {
                                 startActivity(int3);
                             }
                         });
-                alertDialog.getWindow().getDecorView().getBackground().setColorFilter(new LightingColorFilter(0xFF44336, 000000));
+                alertDialog.getWindow().getDecorView().getBackground().setColorFilter(new LightingColorFilter(0x0383a3, 000000));
                 alertDialog.show();
                 Button btnPositive = alertDialog.getButton(AlertDialog.BUTTON_POSITIVE);
                 Button btnNegative = alertDialog.getButton(AlertDialog.BUTTON_NEGATIVE);

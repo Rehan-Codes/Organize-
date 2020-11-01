@@ -30,20 +30,20 @@ public class Activity27 extends AppCompatActivity {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.activity_27);
 
-        target1 = (LinearLayout) findViewById(R.id.target1);
-        target2 = (LinearLayout) findViewById(R.id.target2);
-        target3 = (LinearLayout) findViewById(R.id.target3);
-        target4 = (LinearLayout) findViewById(R.id.target4);
+        target1 = findViewById(R.id.target1);
+        target2 = findViewById(R.id.target2);
+        target3 = findViewById(R.id.target3);
+        target4 = findViewById(R.id.target4);
 
-        test1 = (Button) findViewById(R.id.test1);
-        test2 = (Button) findViewById(R.id.test2);
-        test3 = (Button) findViewById(R.id.test3);
-        test4 = (Button) findViewById(R.id.test4);
+        test1 = findViewById(R.id.test1);
+        test2 = findViewById(R.id.test2);
+        test3 = findViewById(R.id.test3);
+        test4 = findViewById(R.id.test4);
 
-        btn1 = (ImageView) findViewById(R.id.btn1);
-        btn2 = (ImageView) findViewById(R.id.btn2);
-        btn3 = (ImageView) findViewById(R.id.btn3);
-        btn4 = (ImageView) findViewById(R.id.btn4);
+        btn1 = findViewById(R.id.btn1);
+        btn2 = findViewById(R.id.btn2);
+        btn3 = findViewById(R.id.btn3);
+        btn4 = findViewById(R.id.btn4);
 
         target1.setOnDragListener(dragListenre);
         target2.setOnDragListener(dragListenre);
@@ -55,8 +55,8 @@ public class Activity27 extends AppCompatActivity {
         btn3.setOnLongClickListener(longclickListener);
         btn4.setOnLongClickListener(longclickListener);
 
-        backToMenu = (Button) findViewById(R.id.menu);
-        resetChange = (Button) findViewById(R.id.Reset);
+        backToMenu = findViewById(R.id.menu);
+        resetChange = findViewById(R.id.Reset);
 
 
         backToMenu.setOnClickListener(new View.OnClickListener() {
@@ -100,13 +100,6 @@ public class Activity27 extends AppCompatActivity {
                 View view = (View) event.getLocalState();
 
                 switch (dragEvent) {
-                    case DragEvent.ACTION_DRAG_ENTERED:
-
-                        break;
-
-                    case DragEvent.ACTION_DRAG_EXITED:
-
-                        break;
                     case DragEvent.ACTION_DROP:
 
                         if (v.getId() == R.id.target1) {
@@ -194,7 +187,7 @@ public class Activity27 extends AppCompatActivity {
                                 startActivity(int3);
                             }
                         });
-                alertDialog.getWindow().getDecorView().getBackground().setColorFilter(new LightingColorFilter(0xFF44336, 000000));
+                alertDialog.getWindow().getDecorView().getBackground().setColorFilter(new LightingColorFilter(0xFF4CAF50, 000000));
                 alertDialog.show();
                 Button btnPositive = alertDialog.getButton(AlertDialog.BUTTON_POSITIVE);
                 Button btnNegative = alertDialog.getButton(AlertDialog.BUTTON_NEGATIVE);
