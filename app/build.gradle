@@ -5,7 +5,7 @@ android {
     buildToolsVersion "30.0.1"
 
     defaultConfig {
-        applicationId "O.R.Organize"
+        applicationId "o.r.organize"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
