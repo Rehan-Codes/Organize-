@@ -169,7 +169,7 @@ public class Activity26 extends AppCompatActivity {
         if (i == 4) {
             if (num1 == 1 && num2 == 1 && num3 == 1 && num4 == 1) {
                 AlertDialog alertDialog = new AlertDialog.Builder(Activity26.this).create();
-                alertDialog.setTitle("Congratulations!\n Category Completed \u2713");
+                alertDialog.setTitle("Congratulations!\nCategory Completed \u2713");
                 alertDialog.setMessage("Boeing 747 - 404,548 lb\nBoeing 777 - 343,259 lb\nBoeing 787 - 254,192 lb\nBoeing 737 - 181,000 lb");
                 alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Back to Menu",
                         new DialogInterface.OnClickListener() {
